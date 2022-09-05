@@ -1,0 +1,88 @@
+# Project: Curs
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe -D__DEBUG__
+CC       = gcc.exe -D__DEBUG__
+WINDRES  = windres.exe
+OBJ      = Main.o TableDraw.o Controller.o GotoXY.o SwordWeapon.o BasicWeapon.o ArmorWeapon.o BasicArmor.o LegWeapon.o BasicLeg.o ShieldWeapon.o BasicShield.o HelmWeapon.o BasicHelm.o Player.o Import.o Sounds.o Turns.o Player1.o Player2.o System.o
+LINKOBJ  = Main.o TableDraw.o Controller.o GotoXY.o SwordWeapon.o BasicWeapon.o ArmorWeapon.o BasicArmor.o LegWeapon.o BasicLeg.o ShieldWeapon.o BasicShield.o HelmWeapon.o BasicHelm.o Player.o Import.o Sounds.o Turns.o Player1.o Player2.o System.o
+LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc -lmingw32 "../../../../../Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib32/libwinmm.a" "../../../../../Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib/libwinmm.a" -g3
+INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = Curs.exe
+CXXFLAGS = $(CXXINCS) -g3
+CFLAGS   = $(INCS) -g3
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+Main.o: Main.cpp
+	$(CPP) -c Main.cpp -o Main.o $(CXXFLAGS)
+
+TableDraw.o: TableDraw.cpp
+	$(CPP) -c TableDraw.cpp -o TableDraw.o $(CXXFLAGS)
+
+Controller.o: Controller.cpp
+	$(CPP) -c Controller.cpp -o Controller.o $(CXXFLAGS)
+
+GotoXY.o: GotoXY.cpp
+	$(CPP) -c GotoXY.cpp -o GotoXY.o $(CXXFLAGS)
+
+SwordWeapon.o: SwordWeapon.cpp
+	$(CPP) -c SwordWeapon.cpp -o SwordWeapon.o $(CXXFLAGS)
+
+BasicWeapon.o: BasicWeapon.cpp
+	$(CPP) -c BasicWeapon.cpp -o BasicWeapon.o $(CXXFLAGS)
+
+ArmorWeapon.o: ArmorWeapon.cpp
+	$(CPP) -c ArmorWeapon.cpp -o ArmorWeapon.o $(CXXFLAGS)
+
+BasicArmor.o: BasicArmor.cpp
+	$(CPP) -c BasicArmor.cpp -o BasicArmor.o $(CXXFLAGS)
+
+LegWeapon.o: LegWeapon.cpp
+	$(CPP) -c LegWeapon.cpp -o LegWeapon.o $(CXXFLAGS)
+
+BasicLeg.o: BasicLeg.cpp
+	$(CPP) -c BasicLeg.cpp -o BasicLeg.o $(CXXFLAGS)
+
+ShieldWeapon.o: ShieldWeapon.cpp
+	$(CPP) -c ShieldWeapon.cpp -o ShieldWeapon.o $(CXXFLAGS)
+
+BasicShield.o: BasicShield.cpp
+	$(CPP) -c BasicShield.cpp -o BasicShield.o $(CXXFLAGS)
+
+HelmWeapon.o: HelmWeapon.cpp
+	$(CPP) -c HelmWeapon.cpp -o HelmWeapon.o $(CXXFLAGS)
+
+BasicHelm.o: BasicHelm.cpp
+	$(CPP) -c BasicHelm.cpp -o BasicHelm.o $(CXXFLAGS)
+
+Player.o: Player.cpp
+	$(CPP) -c Player.cpp -o Player.o $(CXXFLAGS)
+
+Import.o: Import.cpp
+	$(CPP) -c Import.cpp -o Import.o $(CXXFLAGS)
+
+Sounds.o: Sounds.cpp
+	$(CPP) -c Sounds.cpp -o Sounds.o $(CXXFLAGS)
+
+Turns.o: Turns.cpp
+	$(CPP) -c Turns.cpp -o Turns.o $(CXXFLAGS)
+
+Player1.o: Player1.cpp
+	$(CPP) -c Player1.cpp -o Player1.o $(CXXFLAGS)
+
+Player2.o: Player2.cpp
+	$(CPP) -c Player2.cpp -o Player2.o $(CXXFLAGS)
+
+System.o: System.cpp
+	$(CPP) -c System.cpp -o System.o $(CXXFLAGS)

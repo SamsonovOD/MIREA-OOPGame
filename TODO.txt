@@ -1,0 +1,37 @@
+Шаг 1: Графический инетрфейс [v]
+Шаг 2: Взимодействие с пользователем [v]
+Шаг 3: Системма классов предметов [v]
+Шаг 4: Системма обмундирования [v]
+Шаг 5: Реализация шагового боя [v]
+Шаг 6: Использование свойств предметов [v]
+Шаг 7: Засунуть всё в классы [v]
+Шаг 8: Анимация [v]
+Шаг 9: Мультиплеер [ ]
+Шаг 10: Оптимизация [ ]
+
+info
+SetConsoleTextAttribute:
+8 grey
+9 blue
+10 green
+11 lblue
+12 red
+13 pink
+14 yellow
+15 white
+
+turns:
+0 menu
+1 name
+2 calc & draw
+3 ask 1 action
+4 perform 1 action
+5 defend 2
+6 calc & draw
+7 ask 2 action
+8 perform 2 action
+9 defend 1
+10 calc & draw
+11 cycle
+
+
